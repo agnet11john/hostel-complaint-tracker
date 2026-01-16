@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadUser()">
+
+<header>
+  <h1>User Dashboard</h1>
+  <button onclick="location.href='index.html'">Logout</button>
+</header>
+
+<div class="container">
+
+  <!-- SUBMIT COMPLAINT -->
+  <div class="card">
+    <h3>Submit Complaint</h3>
+
+    <input id="room" placeholder="Room Number">
+    <textarea id="complaint" placeholder="Describe your problem"></textarea>
+
+    <button id="submitBtn" onclick="submitComplaint(event)">
+      Submit Complaint
+    </button>
+  </div>
+
+  <!-- USER COMPLAINT LIST -->
+  <div id="list"></div>
+
+  <!-- CHANGE PASSWORD (SMALL & BOTTOM) -->
+  <div class="small-password">
+    <h4>Change Password</h4>
+    <input id="oldPassword" type="password" placeholder="Old Password">
+    <input id="newPassword" type="password" placeholder="New Password">
+    <button onclick="changePassword()">Update</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

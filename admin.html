@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadAdmin()">
+
+<header>
+  <h1>Admin Dashboard</h1>
+  <button onclick="location.href='index.html'">Logout</button>
+</header>
+
+<div class="container">
+
+  <!-- ADMIN COMPLAINT LIST -->
+  <div id="adminList"></div>
+
+  <!-- CHANGE PASSWORD (SMALL & BOTTOM) -->
+  <div class="small-password">
+    <h4>Change Password</h4>
+    <input id="oldPassword" type="password" placeholder="Old Password">
+    <input id="newPassword" type="password" placeholder="New Password">
+    <button onclick="changePassword()">Update</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
